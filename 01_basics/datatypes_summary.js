@@ -36,3 +36,30 @@ const myFunction = function(){
 // console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (primitive), Heap (non-primitive)
+
+let myYoutubename = "adityasingdeodacom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+console.log(anothername);
+console.log(myYoutubename);
+
+let user = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = user // reference not copy
+userTwo.email = "aditya@google.com"
+
+console.log(user.email)
+console.log(userTwo.email)
+
+// primitive => stack and gets copy
+// Non-primitive => heap and gets reference, so changes are same

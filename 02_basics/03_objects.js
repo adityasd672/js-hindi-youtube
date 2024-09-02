@@ -18,9 +18,30 @@ const JsUser = {
     lastLoginDays: ["Monday","Saturday"]
 }
 
-console.log(JsUser.email);
-console.log(JsUser["email"]);
-console.log(JsUser["full name"]);
-console.log(typeof JsUser.mySym);
+// console.log(JsUser.email);
+// console.log(JsUser["email"]);
+// console.log(JsUser["full name"]);
+// console.log(typeof JsUser[mySym]);
+
+JsUser.email = "adityasd@gmail.com"
+// Object.freeze(JsUser) // no changes will be made in object
+
+JsUser.email = "jsfljsldkfj"
+// console.log(JsUser.email)
+
+// console.log(JsUser);
+
+JsUser.greeting = function(){
+    console.log("Hello Js user");
+}
+
+JsUser.greetingTwo = function(){
+    console.log(`hello Js user, ${this.name}`); // this. used to refer objects
+}
+
+
+console.log(JsUser.greeting())
+console.log(JsUser.greetingTwo());
+
 
 

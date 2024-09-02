@@ -3,8 +3,6 @@
 // object literals
 // Object.create
 
-// objec literal
-
 const mySym = Symbol("key1")
 
 const JsUser = {

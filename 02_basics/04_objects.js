@@ -36,7 +36,7 @@ const obj4 = {
 // const obj3 = Object.assign({},obj1,obj2,obj4) // assign{<target>,<source>,<sources>...}
 
 const obj3 = {...obj1, ...obj2,...obj4} // spread krdiya
-console.log(obj3);
+// console.log(obj3);
 
 // jab bhi dataBase se values aayengi => DB se array of objects aayega
 const users = [
@@ -73,15 +73,50 @@ const users = [
 ]
 
 users[0].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
 
-console.log(Object.keys(tinderUser)); // saari keys dedo => output => arrays of keys. VVVIMP.====================================
+// console.log(Object.keys(tinderUser)); // saari keys dedo => output => arrays of keys. VVVIMP.====================================
 
-console.log(Object.values(tinderUser))
-console.log(Object.entries(tinderUser));
+// console.log(Object.values(tinderUser))
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+// Destructuring 
+
+const course = {
+    coursename: "js i hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+
+// API's concept => apna kaam kisi aur ke sar par daaldo. 
+
+// JSON
+
+// {
+//     "name": "hitesh",
+//     "coursename" : "js in hindi",
+//     "price": "free"
+// }
+
+// [
+//     {},
+//     {},
+//     {},
+//     {},
+//     {}
+// ]
+
 
 
 

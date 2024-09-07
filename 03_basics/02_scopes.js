@@ -65,4 +65,3 @@ console.log(addTwo(5)); // now error => hoisting concept
 const addTwo = function(num){ // expression 
     return num+2
 }
-

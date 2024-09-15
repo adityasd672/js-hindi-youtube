@@ -39,3 +39,10 @@ myCoding.forEach((object) => { // for each used in databases array
     console.log(object.languageName);
     
 })
+
+const values = coding.forEach((item)=>{
+    console.log(item);
+    
+})
+
+console.log(values);

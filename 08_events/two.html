@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two HTML</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    // setTimeout -> method and calls api, not part of core javascript
+
+    const sayAditya = function(){
+        console.log("Aditya");
+    }
+
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+    const changeMe = setTimeout(changeText,2000) // setTimeout (reference/callback/handler), miliseconds)
+
+    document.querySelector('#stop').addEventListener('click', function(e){
+        clearTimeout(changeMe);
+        console.log("STOPPED");
+    })
+</script>
+</html>

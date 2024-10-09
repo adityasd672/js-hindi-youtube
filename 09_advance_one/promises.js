@@ -96,7 +96,7 @@ consumePromiseFive()
 
 // getAllUsers()
 
-fetch('https://api.github.com/users/hiteshchoudhary')
+fetch('https://api.github.com/users/hiteshchoudhary') // fetch-> microtask/ priority queue -> callstack 
 .then((response)=>{
     return response.json()
 })
